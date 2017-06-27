@@ -1,0 +1,164 @@
+﻿<ion-header class="backgr">
+  <ion-navbar>
+    <ion-title>
+      Get Revenue App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <br />
+  <ion-list>
+    <ion-item>
+      <ion-label class="label-textDate">
+        <strong>
+          Select the time interval
+        </strong>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime displayFormat="DD/MMMM/YYYY" pickerFormat="DD/MMMM/YYYY" [(ngModel)]="dateFrom" name="dateFrom"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Start Time (hour)</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="timeFrom" name="timeFrom"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <br />
+    </ion-item>
+    <ion-item>
+      <ion-label>End date</ion-label>
+      <ion-datetime displayFormat="DD/MMMM/YYYY" pickerFormat="DD/MMMM/YYYY" [(ngModel)]="dateTo" name="dateTo"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>End Time (hour)</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="timeTo" name="timeTo"></ion-datetime>
+    </ion-item>
+
+    <br />
+
+    <ion-row>
+      <ion-col>
+        <button ion-button round color="twitter" (click)="fct_get()">
+          Get Revenue
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button block color="secondary" (click)="ClearFields()">
+          Clear fields
+        </button>
+      </ion-col>
+    </ion-row>
+
+
+    <br />
+  </ion-list>
+
+  
+
+    <br />
+
+    <ion-grid text-wrap>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>
+              RevenueStores
+            </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{RevenueStores}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <div>
+              RevenueOnlineHomeDelivery
+            </div>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{RevenueOnlineHomeDelivery}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <div>
+              RevenueOnlineHomeDelivery
+            </div>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{RevenueOnlineHomeDelivery}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <div>
+              TotalRevenue
+            </div>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{TotalRevenue}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <div>
+              LastTicketTimeStamp
+            </div>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{LastTicketTimeStamp}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <div>
+              LastProcessedOrder
+            </div>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <div>
+              {{LastProcessedOrder}}
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+</ion-content>
