@@ -58,7 +58,6 @@ export class HomePage {
     }
 
     fct_get() {
-
         this.logicalVar = false;
         var dDateFrom = new String();
         var dDateTo = new String();
